@@ -8,7 +8,7 @@ import { Provider } from 'react-redux'
 import Store from './components/Store';
 
 // Load the Components from index.js, Shorthand way
-import { Header, CryptoContainer } from './components';
+import { Header, CryptoContainer, CoinCard } from './components';
 
 // This is the main App that renders everything. Think Top
 export default class App extends React.Component {
@@ -18,6 +18,7 @@ export default class App extends React.Component {
         <View>
           <Header />
           <CryptoContainer />
+          <CoinCard />
         </View>
       </Provider>
     );
