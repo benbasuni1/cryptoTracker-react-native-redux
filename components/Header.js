@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Header file that has the title of Crypto App on your phone
 export default class Header extends React.Component {
   render() {
     return (
@@ -11,6 +12,7 @@ export default class Header extends React.Component {
   }
 }
 
+// Styles for our Header
 const styles = StyleSheet.create({
   header: {
     display: 'flex',

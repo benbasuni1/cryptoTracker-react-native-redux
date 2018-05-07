@@ -1,11 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Provider connects all of the states from Redux to the state components
 import { Provider } from 'react-redux'
-import Store from './components/store';
 
+// Import Store, which is basically where all your states live
+import Store from './components/Store';
+
+// Load the Components from index.js, Shorthand way
 import { Header, CryptoContainer } from './components';
 
+// This is the main App that renders everything. Think Top
 export default class App extends React.Component {
   render() {
     return (
@@ -18,12 +23,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
